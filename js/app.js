@@ -209,8 +209,8 @@ function cronometro () {
 		texto_ocho.innerHTML = '<a class="texto">Fin de la primera fase en 20 segundos</a>';
 		}
 		// final 1º fase 4m05s
-		if ((minutos == 4)&&(segundos == 05)&&(centesimas == 0)) {
-		sonido_audio_first_phase_ends.play();
+		if ((minutos == 4)&&(segundos == 5)&&(centesimas == 0)) {
+		sonido_first_phase_ends.play();
 		texto_nueve.innerHTML = '<a class="texto">Fin de la primera fase en 5, 4, 3, 2, 1</a>';
 		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
 
