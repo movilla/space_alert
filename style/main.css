@@ -1,0 +1,335 @@
+@media (orientation: portrait) {
+    #portrait{
+        display: block;
+          }
+}
+
+@font-face {
+  font-family:'Diogenes';
+  src: url('./fonts/DIOGENES.ttf');
+  font-weight: 100;
+}
+
+* {
+  font-family: Diogenes, Open Sans, sans-serif;
+}
+
+
+#fondo {
+  position: fixed;
+  background: url("img/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width:100%;
+  height:100%;
+  top: 0rem;
+  left: 0rem;
+  z-index: -2;
+}
+
+#click  {
+  width: 130%;
+  color: #000;
+  text-shadow: 0.1em 0.1em #AAA;
+  box-shadow: 0.1em 0.1em #000;
+}
+
+#dioses {
+  text-align: center;
+}
+
+#dios_uno, #dios_dos, #dios_tres, #dios_cuatro {
+  font-size: 3em;
+  text-align: center;
+  color: #f60a05;
+  text-shadow: -0.1em 0.1em 0.04em #EEE;
+}
+
+.barra {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  background: url('./icons/header-bg-long.jpg') #282323;
+  padding-top: 4%;
+  box-shadow: 0em -0.1em 0.2em rgba(0,0,0,0.75);
+  z-index: 16;
+  display: flex;
+}
+
+.barrados {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background: url('./icons/header-bg-long.jpg') #282323;
+  padding-top: 3%;
+  box-shadow: 0em 0.1em 0.2em rgba(0,0,0,0.75);
+  z-index: 16;
+  display: flex;
+  height: 3%;
+}
+
+.marronda {
+  color: #FFF;
+  position: fixed;
+  left: 2%;
+  top: 0.5em;
+  text-shadow: 0.1em 0.1em grey;
+}
+
+.amenzahades {
+  color: #FFF;
+  position: fixed;
+  right: -40%;
+  top: 0.5em;
+  text-shadow: 0.1em 0.1em grey;
+}
+
+.icono_hades {
+  position: fixed;
+  top: 0.25em;
+  left: 30%;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 25%;
+}
+
+.icono_ayuda {
+  position: absolute;
+  bottom: 25%;
+  left: 30%;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 25%;
+}
+
+#boton {
+    position: relative;
+    margin-top: -2%;
+    z-index: 20;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+#clickdos, #clicktres, #clickcuatro, #clickcinco {
+  width: 2em;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: #FFF;
+  text-shadow: 0.1em 0.1em #000;
+
+}
+
+#dosjug, #tresjug, #cuatrojug, #cincojug {
+    position: relative;
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: -2%;
+    font-size: 3em;
+    z-index: 20;
+    width: 100%;
+}
+
+#dosjug {
+    margin-left: 40%;
+}
+
+#tresjug {
+    margin-left: 0%;
+}
+
+#cuatrojug {
+    margin-left: 0%;
+}
+
+#cincojug {
+    margin-left: 0%;
+}
+
+.cincoplayers {
+    color: red;
+}
+
+.sorteo{
+  font-size: 1em;
+}
+
+.img_dioses_uno, .img_dioses_dos, .img_dioses_tres, .img_dioses_cuatro {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  left: 0%;
+}
+
+.img_dioses_uno {
+  padding-top: 20%;
+}
+
+.img_dioses_dos {
+  padding-top: 50%;
+}
+
+.img_dioses_tres {
+  padding-top: 80%;
+}
+
+.img_dioses_cuatro {
+  padding-top: 110%;
+}
+
+.dosplayers, .tresplayers, .cuatroplayers {
+  padding: 0.2em 0.2em;
+}
+
+.balloon {
+  border-radius: 0.5em;
+  background-color: red;
+  color: white;
+  padding: 0.25em;
+  font-size: 2em;
+  position: fixed;
+  top: 20%;
+  z-index: 50;
+  opacity: 0;
+  box-shadow: 0.1em 0.1em #000;
+  text-shadow: 0.1em 0.1em #000;
+}
+
+.balloon:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 3em solid red;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  margin: -3em 0 0 0em;
+}
+
+.balloondos {
+  border-radius: 0.5em;
+  background-color: red;
+  color: white;
+  padding: 0.25em;
+  font-size: 1.5em;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  z-index: 50;
+  opacity: 0;
+  box-shadow: 0.1em 0.1em #000;
+  text-shadow: 0.1em 0.1em #000;
+}
+
+.balloondos:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 1em solid red;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  margin: -1em 0 0 0em;
+}
+
+.balloontres {
+  border-radius: 0.5em;
+  background-color: red;
+  color: white;
+  padding: 0.25em;
+  font-size: 1.5em;
+  position: fixed;
+  bottom: 20%;
+  left: 5%;
+  z-index: 50;
+  opacity: 0;
+  box-shadow: 0.1em 0.1em #000;
+  text-shadow: 0.1em 0.1em #000;
+}
+
+.balloontres:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 3em solid red;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  margin: 1.5em 0 0 0em;
+}
+
+.ballooncuatro {
+  border-radius: 0.5em;
+  background-color: red;
+  color: white;
+  padding: 0.25em;
+  font-size: 1.5em;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 50;
+  opacity: 0;
+  box-shadow: 0.1em 0.1em #000;
+  text-shadow: 0.1em 0.1em #000;
+}
+
+.ballooncuatro:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 1em solid red;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  margin: 1.5em 0 0 0em;
+  right: 10%;
+}
+
+@keyframes uno {	
+    0%  {left: 110%;}
+    100%    {left: 0%;}
+}
+
+@keyframes dos {	
+    0%  {left: -110%;}
+    100%    {left: 0%;}
+}
+
+@keyframes tres {	
+    0%  {left: 0%;}
+    100%    {left: -110%;}
+}
+
+@keyframes cuatro {	
+    0%  {left: 0%;}
+    100%    {left: -110%;}
+}
+
+@keyframes amenaza {	
+    0%  {right: -40%;}
+    100%    {right: 1%;}
+}
+
+@keyframes girapabajo {	
+        0%	{transform: rotate(0deg);}
+	100%    {transform: rotate(180deg);}
+}
+
+@keyframes girapariba {	
+        0%	{transform: rotate(180deg);}
+	100%    {transform: rotate(0deg);}
+}
+
+@keyframes deapir {	
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes apir {	
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
