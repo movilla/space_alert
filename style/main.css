@@ -16,6 +16,15 @@
     font-size: 3em;
     display: flex;
 }
+#botones{
+	position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    display: flex;
+}
+
 .reloj{
 	float: left;
 	font-family: Courier,sans-serif;
@@ -39,4 +48,24 @@
 }
 .boton:hover{
 	box-shadow: 0px 0px 14px #3aad02;
+}
+
+@keyframes uno {	
+    0%  {left: 110%;}
+    100%    {left: 0%;}
+}
+
+#texto_uno {
+	display: block;
+}
+
+.texto {
+  width: 250px;
+  height: 150px;
+  border: 1px solid #d9d9d9;
+  margin: 0 auto;
+  animation-name: uno;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
