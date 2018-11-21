@@ -71,6 +71,7 @@ function cronometro () {
 	var sonido_repeat = document.getElementById("audio_repeat");
 	var sonido_data_transfer = document.getElementById("data_transfer");
 	var sonido_first_phase_ends_in_1_minute = document.getElementById("audio_first_phase_ends_in_1_minute");
+	var sonido_first_phase_ends_in_20_seconds = document.getElementById("first_phase_ends_in_20_seconds");
 	var texto_uno = document.getElementById("texto_uno");
 	var texto_dos = document.getElementById("texto_dos");
 	var texto_tres = document.getElementById("texto_tres");
@@ -78,6 +79,7 @@ function cronometro () {
 	var texto_cinco = document.getElementById("texto_cinco");
 	var texto_seis = document.getElementById("texto_seis");
 	var texto_siete = document.getElementById("texto_siete");
+	var texto_ocho = document.getElementById("texto_ocho");
 	// comienzo primera fase
 	if ((minutos == 0)&&(segundos == 0)&&(centesimas == 5)) {
 		sonido_begin_first_phase.play();
@@ -191,12 +193,17 @@ function cronometro () {
 		// final 1º fase en 60s 3m10s
 		if ((minutos == 3)&&(segundos == 10)&&(centesimas == 0)) {
 		sonido_first_phase_ends_in_1_minute.play();
-		texto_seis.innerHTML = '<a class="texto">Final de la primera fase en 1 minuto</a>';
+		texto_seis.innerHTML = '<a class="texto">Fin de la primera fase en 1 minuto</a>';
 		}
 		// transferencia datos 3m20s
 		if ((minutos == 3)&&(segundos == 20)&&(centesimas == 0)) {
 		sonido_data_transfer.play();
 		texto_siete.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
+		}
+		// final 1º fase en 20s 3m50s
+		if ((minutos == 3)&&(segundos == 50)&&(centesimas == 0)) {
+		sonido_first_phase_ends_in_20_seconds.play();
+		texto_seis.innerHTML = '<a class="texto">Fin de la primera fase en 20 segundos</a>';
 		}
 		
 }
