@@ -71,7 +71,8 @@ function cronometro () {
 	var sonido_repeat = document.getElementById("audio_repeat");
 	var sonido_data_transfer = document.getElementById("data_transfer");
 	var sonido_first_phase_ends_in_1_minute = document.getElementById("audio_first_phase_ends_in_1_minute");
-	var sonido_first_phase_ends_in_20_seconds = document.getElementById("first_phase_ends_in_20_seconds");
+	var sonido_first_phase_ends_in_20_seconds = document.getElementById("audio_first_phase_ends_in_20_seconds");
+	var sonido_audio_first_phase_ends = document.getElementById("audio_first_phase_ends");
 	var texto_uno = document.getElementById("texto_uno");
 	var texto_dos = document.getElementById("texto_dos");
 	var texto_tres = document.getElementById("texto_tres");
@@ -83,7 +84,7 @@ function cronometro () {
 	// comienzo primera fase
 	if ((minutos == 0)&&(segundos == 0)&&(centesimas == 5)) {
 		sonido_begin_first_phase.play();
-		setTimeout(function() {texto_uno.innerHTML = '<a class="texto">Actividad enemiga detectada. Comience la fase 1</a>';}, 2000);
+		setTimeout(function() {texto_uno.innerHTML = '<a class="texto">Actividad enemiga detectada. Comienza la fase 1</a>';}, 2000);
 		}
 	// comienzo primera amenza a 15s
 	if ((minutos == 0)&&(segundos == 15)&&(centesimas == 0)) {
@@ -205,6 +206,10 @@ function cronometro () {
 		sonido_first_phase_ends_in_20_seconds.play();
 		texto_seis.innerHTML = '<a class="texto">Fin de la primera fase en 20 segundos</a>';
 		}
-		
+		// final 1º fase 4m05s
+		if ((minutos == 4)&&(segundos == 05)&&(centesimas == 0)) {
+		sonido_audio_first_phase_ends.play();
+		texto_seis.innerHTML = '<a class="texto">Fin de la primera fase en 20 segundos</a>';
+		}
 }
 //setTimeout(function(){ alert(segundos); }, 3000);
