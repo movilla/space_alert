@@ -16,7 +16,8 @@
     </author>
 
     <preference name="permissions"                value="none"/>
-    <preference name="orientation"                value="portrait" />  
+    <preference name="orientation"                value="portrait" /> 
+    <plugin name="cordova-plugin-insomnia" /> 
 
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
