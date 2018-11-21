@@ -5,10 +5,10 @@
         id        = "https://github.com/movilla/cyclades"
         version   = "0.1.0">
 
-    <name>Cyclades</name>
+    <name>Space Aler Misiones</name>
 
     <description>
-        Aplicación que permite el sorteo de dioses para el juego de mesa Cyclades.
+        Aplicación que permite jugar misiones aleatorias.
     </description>
 
     <author href="https://github.com/movilla" email="moviglez@gmail.com">
