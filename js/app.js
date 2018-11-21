@@ -1,4 +1,3 @@
-window.plugins.insomnia.keepAwake();
 var centesimas = 0;
 var segundos = 0;
 var minutos = 0;

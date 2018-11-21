@@ -36,7 +36,7 @@
 		<div class="reloj" id="Centesimas">:00</div>
 </section>
 <section id="botones">
-		<input type="button" class="boton" id="inicio" value="Empezar &#9658;" onclick="inicio();">
+		<input type="button" class="boton" id="inicio" value="Empezar &#9658;" onclick="inicio(), window.plugins.insomnia.keepAwake()">
 		<input type="button" class="boton" id="parar" value="Parar &#8718;" onclick="parar();" disabled>
 		<input type="button" class="boton" id="continuar" value="Continuar &#8634;" onclick="inicio();" disabled>
 		<input type="button" class="boton" id="reinicio" value="Reinicio &#8635;" onclick="reinicio();" disabled>
@@ -53,7 +53,7 @@
 	<audio id="data_transfer" src="./sonidos/data_transfer.mp3"></audio>
 	<audio id="audio_first_phase_ends_in_1_minute" src="./sonidos/	first_phase_ends_in_1_minute.mp3"></audio>
 		<audio id="audio_first_phase_ends_in_20_seconds" src="./sonidos/	first_phase_ends_in_20_seconds.mp3"></audio>
-<script type="text/javascript" src="./cordova.js"></script>
 <script type="text/javascript" src="./js/app.js"></script>
+<script type="text/javascript" src="./cordova.js"></script>
 </body>
 </html>
