@@ -1,11 +1,11 @@
 @font-face {
-  font-family:'Diogenes';
-  src: url('./fonts/DIOGENES.ttf');
+  font-family:'Eurostile';
+  src: url('./fonts/Eurostile.ttf');
   font-weight: 100;
 }
 
 * {
-  font-family: Diogenes, Open Sans, sans-serif;
+  font-family: Eurostile, Open Sans, sans-serif;
 }
 
 #contenedor{
@@ -27,7 +27,6 @@
 
 .reloj{
 	float: left;
-	font-family: Courier,sans-serif;
 	color: #363431;
 }
 .boton{
@@ -39,7 +38,6 @@
 	text-shadow: 0px -1px 1px black;
 	font-size: 20px;
 	border-radius: 5px;
-	font-family: Helvetica;
 	cursor: pointer;
 	background-image: linear-gradient(#3aad02,#2c6f05);
 }
@@ -55,14 +53,14 @@
     100%    {left: 0%;}
 }
 
-#texto_uno {
+#texto_uno, #texto_dos, #texto_tres, #texto_cuatro, #texto_cinco, #texto_seis, #texto_siete {
 	display: block;
+	text-align: center;
 }
 
 .texto {
   width: 250px;
   height: 150px;
-  border: 1px solid #d9d9d9;
   margin: 0 auto;
   animation-name: uno;
   animation-duration: 5s;

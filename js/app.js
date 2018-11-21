@@ -66,9 +66,18 @@ function cronometro () {
 	var sonido_threat_zone_white = document.getElementById("audio_threat_zone_white");
 	var sonido_threat_zone_red = document.getElementById("audio_threat_zone_red");
 	var sonido_time_t_plus_1 = document.getElementById("audio_time_t_plus_1");
+	var sonido_time_t_plus_2 = document.getElementById("audio_time_t_plus_2");
+	var sonido_time_t_plus_3 = document.getElementById("audio_time_t_plus_3");
 	var sonido_repeat = document.getElementById("audio_repeat");
+	var sonido_data_transfer = document.getElementById("data_transfer");
+	var sonido_first_phase_ends_in_1_minute = document.getElementById("audio_first_phase_ends_in_1_minute");
 	var texto_uno = document.getElementById("texto_uno");
 	var texto_dos = document.getElementById("texto_dos");
+	var texto_tres = document.getElementById("texto_tres");
+	var texto_cuatro = document.getElementById("texto_cuatro");
+	var texto_cinco = document.getElementById("texto_cinco");
+	var texto_seis = document.getElementById("texto_seis");
+	var texto_siete = document.getElementById("texto_siete");
 	// comienzo primera fase
 	if ((minutos == 0)&&(segundos == 0)&&(centesimas == 5)) {
 		sonido_begin_first_phase.play();
@@ -76,8 +85,8 @@ function cronometro () {
 		}
 	// comienzo primera amenza a 15s
 	if ((minutos == 0)&&(segundos == 15)&&(centesimas == 0)) {
-		var aleatorio = Math.round(Math.random()*2);
-		if (aleatorio == 0) {
+		var aleatorio_uno = Math.round(Math.random()*2);
+		if (aleatorio_uno == 0) {
 			// texto
 			texto_dos.innerHTML = '<a class="texto">Tiempo T+1. Amenaza Zona Azul</a>';
 			// sonidos
@@ -88,7 +97,7 @@ function cronometro () {
 			setTimeout(function(){ sonido_time_t_plus_1.play(); }, 7000);
 			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 8000);
 			}	
-		if (aleatorio == 1) {
+		if (aleatorio_uno == 1) {
 			texto_dos.innerHTML = '<a class="texto">Tiempo T+1. Amenaza Zona Blanca</a>';
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_1.play(); }, 2000);
@@ -97,9 +106,8 @@ function cronometro () {
 			setTimeout(function(){ sonido_time_t_plus_1.play(); }, 7000);
 			setTimeout(function(){ sonido_threat_zone_white.play(); }, 8000);
 			}
-		if (aleatorio == 2) {
-			var texto_dos = document.getElementById("texto_uno");
-			texto_uno.innerHTML = '<a class="texto">Tiempo T+1. Amenaza Zona Roja</a>';
+		if (aleatorio_uno == 2) {
+			texto_dos.innerHTML = '<a class="texto">Tiempo T+1. Amenaza Zona Roja</a>';
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_1.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_red.play(); }, 3000);
@@ -108,6 +116,88 @@ function cronometro () {
 			setTimeout(function(){ sonido_threat_zone_red.play(); }, 8000);
 			}
 		}
+		// comienzo primera amenza a 60s
+		if ((minutos == 1)&&(segundos == 0)&&(centesimas == 0)) {
+			var aleatorio_dos = Math.round(Math.random()*2);
+			if (aleatorio_dos == 0) {
+			// texto
+			texto_tres.innerHTML = '<a class="texto">Tiempo T+2. Amenaza Zona Azul</a>';
+			// sonidos
+			sonido_alert.play();
+			setTimeout(function(){ sonido_time_t_plus_2.play(); }, 2000);
+			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 3000);
+			setTimeout(function(){ sonido_repeat.play(); }, 6000);
+			setTimeout(function(){ sonido_time_t_plus_2.play(); }, 7000);
+			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 8000);
+			}	
+		if (aleatorio_dos == 1) {
+			texto_tres.innerHTML = '<a class="texto">Tiempo T+2. Amenaza Zona Blanca</a>';
+			sonido_alert.play();
+			setTimeout(function(){ sonido_time_t_plus_2.play(); }, 2000);
+			setTimeout(function(){ sonido_threat_zone_white.play(); }, 3000);
+			setTimeout(function(){ sonido_repeat.play(); }, 6000);
+			setTimeout(function(){ sonido_time_t_plus_2.play(); }, 7000);
+			setTimeout(function(){ sonido_threat_zone_white.play(); }, 8000);
+			}
+		if (aleatorio_dos == 2) {
+			texto_tres.innerHTML = '<a class="texto">Tiempo T+2. Amenaza Zona Roja</a>';
+			sonido_alert.play();
+			setTimeout(function(){ sonido_time_t_plus_2.play(); }, 2000);
+			setTimeout(function(){ sonido_threat_zone_red.play(); }, 3000);
+			setTimeout(function(){ sonido_repeat.play(); }, 6000);
+			setTimeout(function(){ sonido_time_t_plus_2.play(); }, 7000);
+			setTimeout(function(){ sonido_threat_zone_red.play(); }, 8000);
+			}
+		}
+		// transferencia datos 1m30s
+		if ((minutos == 1)&&(segundos == 30)&&(centesimas == 0)) {
+		sonido_data_transfer.play();
+		texto_cuatro.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
+		}
+		
+		// comienzo tercera amenaza a 2m15s
+		if ((minutos == 2)&&(segundos == 15)&&(centesimas == 0)) {
+			var aleatorio_tres = Math.round(Math.random()*2);
+			if (aleatorio_tres == 0) {
+			// texto
+			texto_cinco.innerHTML = '<a class="texto">Tiempo T+3. Amenaza Zona Azul</a>';
+			// sonidos
+			sonido_alert.play();
+			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 2000);
+			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 3000);
+			setTimeout(function(){ sonido_repeat.play(); }, 6000);
+			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 7000);
+			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 8000);
+			}	
+		if (aleatorio_tres == 1) {
+			texto_cinco.innerHTML = '<a class="texto">Tiempo T+3. Amenaza Zona Blanca</a>';
+			sonido_alert.play();
+			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 2000);
+			setTimeout(function(){ sonido_threat_zone_white.play(); }, 3000);
+			setTimeout(function(){ sonido_repeat.play(); }, 6000);
+			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 7000);
+			setTimeout(function(){ sonido_threat_zone_white.play(); }, 8000);
+			}
+		if (aleatorio_tres == 2) {
+			texto_cinco.innerHTML = '<a class="texto">Tiempo T+3. Amenaza Zona Roja</a>';
+			sonido_alert.play();
+			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 2000);
+			setTimeout(function(){ sonido_threat_zone_red.play(); }, 3000);
+			setTimeout(function(){ sonido_repeat.play(); }, 6000);
+			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 7000);
+			setTimeout(function(){ sonido_threat_zone_red.play(); }, 8000);
+			}
+		}
+		// final 1º fase en 60s 3m10s
+		if ((minutos == 3)&&(segundos == 10)&&(centesimas == 0)) {
+		sonido_first_phase_ends_in_1_minute.play();
+		texto_seis.innerHTML = '<a class="texto">Final de la primera fase en 1 minuto</a>';
+		}
+		// transferencia datos 3m20s
+		if ((minutos == 3)&&(segundos == 20)&&(centesimas == 0)) {
+		sonido_data_transfer.play();
+		texto_siete.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
+		}
+		
 }
-
 //setTimeout(function(){ alert(segundos); }, 3000);
