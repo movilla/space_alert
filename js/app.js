@@ -72,7 +72,8 @@ function cronometro () {
 	var sonido_data_transfer = document.getElementById("data_transfer");
 	var sonido_first_phase_ends_in_1_minute = document.getElementById("audio_first_phase_ends_in_1_minute");
 	var sonido_first_phase_ends_in_20_seconds = document.getElementById("audio_first_phase_ends_in_20_seconds");
-	var sonido_audio_first_phase_ends = document.getElementById("audio_first_phase_ends");
+	var sonido_first_phase_ends = document.getElementById("audio_first_phase_ends");
+	var sonido_second_phase_begins = document.getElementById("audio_second_phase_begins");
 	var texto_uno = document.getElementById("texto_uno");
 	var texto_dos = document.getElementById("texto_dos");
 	var texto_tres = document.getElementById("texto_tres");
@@ -81,6 +82,7 @@ function cronometro () {
 	var texto_seis = document.getElementById("texto_seis");
 	var texto_siete = document.getElementById("texto_siete");
 	var texto_ocho = document.getElementById("texto_ocho");
+	var texto_nueve = document.getElementById("texto_nueve");
 	// comienzo primera fase
 	if ((minutos == 0)&&(segundos == 0)&&(centesimas == 5)) {
 		sonido_begin_first_phase.play();
@@ -204,12 +206,14 @@ function cronometro () {
 		// final 1º fase en 20s 3m50s
 		if ((minutos == 3)&&(segundos == 50)&&(centesimas == 0)) {
 		sonido_first_phase_ends_in_20_seconds.play();
-		texto_seis.innerHTML = '<a class="texto">Fin de la primera fase en 20 segundos</a>';
+		texto_ocho.innerHTML = '<a class="texto">Fin de la primera fase en 20 segundos</a>';
 		}
 		// final 1º fase 4m05s
 		if ((minutos == 4)&&(segundos == 05)&&(centesimas == 0)) {
 		sonido_audio_first_phase_ends.play();
-		texto_seis.innerHTML = '<a class="texto">Fin de la primera fase en 20 segundos</a>';
+		texto_nueve.innerHTML = '<a class="texto">Fin de la primera fase en 5, 4, 3, 2, 1</a>';
+		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
+
 		}
 }
 //setTimeout(function(){ alert(segundos); }, 3000);
