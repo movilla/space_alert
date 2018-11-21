@@ -41,6 +41,7 @@
 	border-radius: 5px;
 	cursor: pointer;
 	background-image: linear-gradient(#3aad02,#2c6f05);
+	padding: 0em;
 }
 .boton:active{
 	background-image: linear-gradient(#2c6f05,#3aad02);
