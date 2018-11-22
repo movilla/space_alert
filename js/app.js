@@ -74,6 +74,10 @@ function cronometro () {
 	var sonido_first_phase_ends_in_20_seconds = document.getElementById("audio_first_phase_ends_in_20_seconds");
 	var sonido_first_phase_ends = document.getElementById("audio_first_phase_ends");
 	var sonido_second_phase_begins = document.getElementById("audio_second_phase_begins");
+	var sonido_incoming_data = document.getElementById("audio_incoming_data");
+	var sonido_operation_ends_in_1_minute = document.getElementById("audio_operation_ends_in_1_minute");	
+	var sonido_operation_ends_in_20_seconds = document.getElementById("audio_operation_ends_in_20_seconds");	
+	var sonido_operation_ends = document.getElementById("audio_operation_ends");		
 	var texto_uno = document.getElementById("texto_uno");
 	var texto_dos = document.getElementById("texto_dos");
 	var texto_tres = document.getElementById("texto_tres");
@@ -83,6 +87,11 @@ function cronometro () {
 	var texto_siete = document.getElementById("texto_siete");
 	var texto_ocho = document.getElementById("texto_ocho");
 	var texto_nueve = document.getElementById("texto_nueve");
+	var texto_diez = document.getElementById("texto_diez");
+	var texto_once = document.getElementById("texto_once");
+	var texto_doce = document.getElementById("texto_doce");
+	var texto_trece = document.getElementById("texto_trece");
+	var texto_catorce = document.getElementById("texto_catorce");
 	// comienzo primera fase
 	if ((minutos == 0)&&(segundos == 0)&&(centesimas == 5)) {
 		sonido_begin_first_phase.play();
@@ -213,7 +222,37 @@ function cronometro () {
 		sonido_first_phase_ends.play();
 		texto_nueve.innerHTML = '<a class="texto">Fin de la primera fase en 5, 4, 3, 2, 1</a>';
 		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
-
 		}
+		// recibienddo datos fase 4m40s
+		if ((minutos == 4)&&(segundos == 40)&&(centesimas == 0)) {
+		sonido_incoming_data.play();
+		texto_diez.innerHTML = '<a class="texto">Recibiendo datos</a>';
+		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
+		}
+		// transferencia datos 5m10s
+		if ((minutos == 5)&&(segundos == 10)&&(centesimas == 0)) {
+		sonido_data_transfer.play();
+		texto_once.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
+		}
+		// La operación termina en 1 minuto
+		if ((minutos == 6)&&(segundos == 00)&&(centesimas == 0)) {
+		sonido_operation_ends_in_1_minute.play();
+		texto_doce.innerHTML = '<a class="texto">La operación termina en 1 minuto</a>';
+		}
+		// La operación termina en 20s
+		if ((minutos == 6)&&(segundos == 40)&&(centesimas == 0)) {
+		sonido_operation_ends_in_20_seconds.play();
+		texto_trece.innerHTML = '<a class="texto">La operación termina en 20 segundos</a>';
+		}
+		// La operación termina
+		if ((minutos == 6)&&(segundos == 55)&&(centesimas == 0)) {
+		sonido_operation_ends.play();
+		texto_catorce.innerHTML = '<a class="texto">La operación finaliza en 5, 4, 3, 2, 1.</a>';
+		}
+		// La operación termina
+		if ((minutos == 7)&&(segundos == 08)&&(centesimas == 0)) {
+		parar();
+		}
+		
 }
 //setTimeout(function(){ alert(segundos); }, 3000);
