@@ -8,8 +8,52 @@
   font-family: Eurostile, Open Sans, sans-serif;
 }
 
+#fondo {
+  position:fixed;
+  background: url('./img/background_home.jpg') no-repeat center center;
+  background-size: cover;
+  width:100%;
+  height:100%;
+  top: 0rem;
+  left: 0rem;
+  z-index: -2;
+}
+
+
+#game-menu {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.boton_uno {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.texto_boton {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0.05rem 0.05rem black;
+}
+
+.imagen_boton {
+position: absolute;
+    top: -40%;
+    left: -30%;
+    z-index: -10;
+}
+
 #contenedor{
-	position: fixed;
+    position: fixed;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -17,6 +61,7 @@
     display: flex;
     padding-bottom: 2rem;
 }
+
 #botones{
 	position: fixed;
     top: 95%;
@@ -28,7 +73,7 @@
 
 .reloj{
 	float: left;
-	color: #363431;
+	color: #FFF;
 }
 .boton{
 	outline: none;
