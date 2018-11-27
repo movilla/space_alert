@@ -1,13 +1,3 @@
-var aleatorio_emtrenamiendo = Math.round(Math.random()*1);
-var entrenamiento = document.getElementById("entrenamiento");
-	if (entrenamiento) {
-		if (aleatorio_emtrenamiendo == 0) {
-			entrenamiento.href = "./index_1.html";
-		}
-		else {
-			entrenamiento.href = "./index_2.html";
-		}
-	}
 var centesimas = 0;
 var segundos = 0;
 var minutos = 0;
@@ -108,7 +98,7 @@ function cronometro () {
 		setTimeout(function() {texto_uno.innerHTML = '<a class="texto">Actividad enemiga detectada. Comienza la fase 1</a>';}, 2000);
 		}
 	// comienzo primera amenza a 15s
-	if ((minutos == 0)&&(segundos == 15)&&(centesimas == 0)) {
+	if ((minutos == 0)&&(segundos == 10)&&(centesimas == 0)) {
 		var aleatorio_uno = Math.round(Math.random()*2);
 		if (aleatorio_uno == 0) {
 			// texto
@@ -140,8 +130,8 @@ function cronometro () {
 			setTimeout(function(){ sonido_threat_zone_red.play(); }, 8000);
 			}
 		}
-		// comienzo primera amenza a 60s
-		if ((minutos == 1)&&(segundos == 0)&&(centesimas == 0)) {
+		// comienzo primera amenaza a 60s
+		if ((minutos == 1)&&(segundos == 20)&&(centesimas == 0)) {
 			var aleatorio_dos = Math.round(Math.random()*2);
 			if (aleatorio_dos == 0) {
 			// texto
@@ -174,13 +164,13 @@ function cronometro () {
 			}
 		}
 		// transferencia datos 1m30s
-		if ((minutos == 1)&&(segundos == 30)&&(centesimas == 0)) {
+		if ((minutos == 2)&&(segundos == 15)&&(centesimas == 0)) {
 		sonido_data_transfer.play();
 		texto_cuatro.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
 		}
 		
 		// comienzo tercera amenaza a 2m15s
-		if ((minutos == 2)&&(segundos == 15)&&(centesimas == 0)) {
+		if ((minutos == 3)&&(segundos == 45)&&(centesimas == 0)) {
 			var aleatorio_tres = Math.round(Math.random()*2);
 			if (aleatorio_tres == 0) {
 			// texto
@@ -213,36 +203,37 @@ function cronometro () {
 			}
 		}
 		// final 1º fase en 60s 3m10s
-		if ((minutos == 3)&&(segundos == 10)&&(centesimas == 0)) {
+		if ((minutos == 2)&&(segundos == 40)&&(centesimas == 0)) {
 		sonido_first_phase_ends_in_1_minute.play();
 		texto_seis.innerHTML = '<a class="texto">Fin de la primera fase en 1 minuto</a>';
 		}
 		// transferencia datos 3m20s
-		if ((minutos == 3)&&(segundos == 20)&&(centesimas == 0)) {
+		if ((minutos == 4)&&(segundos == 50)&&(centesimas == 0)) {
 		sonido_data_transfer.play();
 		texto_siete.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
 		}
 		// final 1º fase en 20s 3m50s
-		if ((minutos == 3)&&(segundos == 50)&&(centesimas == 0)) {
+		if ((minutos == 3)&&(segundos == 20)&&(centesimas == 0)) {
 		sonido_first_phase_ends_in_20_seconds.play();
 		texto_ocho.innerHTML = '<a class="texto">Fin de la primera fase en 20 segundos</a>';
 		}
 		// final 1º fase 4m05s
-		if ((minutos == 4)&&(segundos == 5)&&(centesimas == 0)) {
+		if ((minutos == 3)&&(segundos == 35)&&(centesimas == 0)) {
 		sonido_first_phase_ends.play();
 		texto_nueve.innerHTML = '<a class="texto">Fin de la primera fase en 5, 4, 3, 2, 1</a>';
 		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
 		}
 		// recibienddo datos fase 4m40s
-		if ((minutos == 4)&&(segundos == 40)&&(centesimas == 0)) {
+		if ((minutos == 0)&&(segundos == 50)&&(centesimas == 0)) {
 		sonido_incoming_data.play();
 		texto_diez.innerHTML = '<a class="texto">Recibiendo datos</a>';
 		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
 		}
-		// transferencia datos 5m10s
-		if ((minutos == 5)&&(segundos == 10)&&(centesimas == 0)) {
-		sonido_data_transfer.play();
-		texto_once.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
+		// recibienddo datos fase 4m40s
+		if ((minutos == 5)&&(segundos == 30)&&(centesimas == 0)) {
+		sonido_incoming_data.play();
+		texto_diez.innerHTML = '<a class="texto">Recibiendo datos</a>';
+		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
 		}
 		// La operación termina en 1 minuto
 		if ((minutos == 6)&&(segundos == 00)&&(centesimas == 0)) {
