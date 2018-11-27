@@ -46,7 +46,7 @@
 }
 
 .imagen_boton {
-position: absolute;
+	position: absolute;
     top: -40%;
     left: -30%;
     z-index: -10;
@@ -75,6 +75,7 @@ position: absolute;
 	float: left;
 	color: #FFF;
 }
+
 .boton{
 	outline: none;
 	border: 1px solid #363431;
@@ -106,11 +107,10 @@ position: absolute;
 }
 
 .texto {
-  width: 250px;
-  height: 150px;
-  margin: 0 auto;
-  animation-name: uno;
-  animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+	width: 250px;
+	height: 150px;
+	margin: 0 auto;
+	color: white;
+    text-decoration: none;
+    text-shadow: 0.05rem 0.05rem black;
 }
