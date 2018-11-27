@@ -68,6 +68,7 @@ function cronometro () {
 	var sonido_time_t_plus_1 = document.getElementById("audio_time_t_plus_1");
 	var sonido_time_t_plus_2 = document.getElementById("audio_time_t_plus_2");
 	var sonido_time_t_plus_3 = document.getElementById("audio_time_t_plus_3");
+	var sonido_time_t_plus_4 = document.getElementById("audio_time_t_plus_4");
 	var sonido_repeat = document.getElementById("audio_repeat");
 	var sonido_data_transfer = document.getElementById("data_transfer");
 	var sonido_first_phase_ends_in_1_minute = document.getElementById("audio_first_phase_ends_in_1_minute");
@@ -174,31 +175,31 @@ function cronometro () {
 			var aleatorio_tres = Math.round(Math.random()*2);
 			if (aleatorio_tres == 0) {
 			// texto
-			texto_cinco.innerHTML = '<a class="texto">Tiempo T+3. Amenaza Zona Azul</a>';
+			texto_cinco.innerHTML = '<a class="texto">Tiempo T+4. Amenaza Zona Azul</a>';
 			// sonidos
 			sonido_alert.play();
-			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 2000);
+			setTimeout(function(){ sonido_time_t_plus_4.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 3000);
 			setTimeout(function(){ sonido_repeat.play(); }, 6000);
-			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 7000);
+			setTimeout(function(){ sonido_time_t_plus_4.play(); }, 7000);
 			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 8000);
 			}	
 		if (aleatorio_tres == 1) {
-			texto_cinco.innerHTML = '<a class="texto">Tiempo T+3. Amenaza Zona Blanca</a>';
+			texto_cinco.innerHTML = '<a class="texto">Tiempo T+4. Amenaza Zona Blanca</a>';
 			sonido_alert.play();
-			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 2000);
+			setTimeout(function(){ sonido_time_t_plus_4.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_white.play(); }, 3000);
 			setTimeout(function(){ sonido_repeat.play(); }, 6000);
-			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 7000);
+			setTimeout(function(){ sonido_time_t_plus_4.play(); }, 7000);
 			setTimeout(function(){ sonido_threat_zone_white.play(); }, 8000);
 			}
 		if (aleatorio_tres == 2) {
-			texto_cinco.innerHTML = '<a class="texto">Tiempo T+3. Amenaza Zona Roja</a>';
+			texto_cinco.innerHTML = '<a class="texto">Tiempo T+4. Amenaza Zona Roja</a>';
 			sonido_alert.play();
-			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 2000);
+			setTimeout(function(){ sonido_time_t_plus_4.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_red.play(); }, 3000);
 			setTimeout(function(){ sonido_repeat.play(); }, 6000);
-			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 7000);
+			setTimeout(function(){ sonido_time_t_plus_4.play(); }, 7000);
 			setTimeout(function(){ sonido_threat_zone_red.play(); }, 8000);
 			}
 		}
