@@ -237,7 +237,6 @@ function cronometro () {
 		if ((minutos == 4)&&(segundos == 40)&&(centesimas == 0)) {
 		sonido_incoming_data.play();
 		texto_diez.innerHTML = '<a class="texto">Recibiendo datos</a>';
-		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
 		}
 		// transferencia datos 5m10s
 		if ((minutos == 5)&&(segundos == 10)&&(centesimas == 0)) {

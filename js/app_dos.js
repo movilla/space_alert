@@ -228,13 +228,11 @@ function cronometro () {
 		if ((minutos == 0)&&(segundos == 50)&&(centesimas == 0)) {
 		sonido_incoming_data.play();
 		texto_diez.innerHTML = '<a class="texto">Recibiendo datos</a>';
-		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
 		}
 		// recibienddo datos fase 4m40s
 		if ((minutos == 5)&&(segundos == 30)&&(centesimas == 0)) {
 		sonido_incoming_data.play();
 		texto_diez.innerHTML = '<a class="texto">Recibiendo datos</a>';
-		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
 		}
 		// La operación termina en 1 minuto
 		if ((minutos == 6)&&(segundos == 00)&&(centesimas == 0)) {
