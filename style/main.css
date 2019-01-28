@@ -30,7 +30,7 @@
 
 #game_menu_dos {
     position: fixed;
-    top: 10%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -69,7 +69,7 @@
     text-shadow: 0.05rem 0.05rem black;
 }
 
-.imagen_boton {
+.imagen_boton_uno {
 	position: absolute;
 	top: -40%;
     left: -25%;

@@ -1,7 +1,7 @@
-var aleatorio_emtrenamiendo = Math.round(Math.random()*1);
+var aleatorio_entrenamiendo = Math.round(Math.random()*1);
 var entrenamiento = document.getElementById("entrenamiento");
 	if (entrenamiento) {
-		if (aleatorio_emtrenamiendo == 0) {
+		if (aleatorio_entrenamiendo == 0) {
 			entrenamiento.href = "./index_1.html";
 		}
 		else {
