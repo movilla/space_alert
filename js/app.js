@@ -120,14 +120,14 @@ function cronometro () {
 	// comienzo primera fase
 	if ((minutos == 0)&&(segundos == 0)&&(centesimas == 5)) {
 		sonido_begin_first_phase.play();
-		setTimeout(function() {texto_uno.innerHTML = '<a class="texto">Actividad enemiga detectada. Comienza la fase 1</a>';}, 2000);
+		setTimeout(function() {texto_uno.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Actividad enemiga detectada. Comienza la fase 1</a>';}, 2000);
 		}
 	// comienzo primera amenza a 15s
 	if ((minutos == 0)&&(segundos == 15)&&(centesimas == 0)) {
 		var aleatorio_uno = Math.round(Math.random()*2);
 		if (aleatorio_uno == 0) {
 			// texto
-			texto_dos.innerHTML = '<a class="texto">Tiempo T+1. Amenaza Zona Azul</a>';
+			texto_dos.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Tiempo T+1. Amenaza Zona Azul</a>';
 			// sonidos
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_1.play(); }, 2000);
@@ -137,7 +137,7 @@ function cronometro () {
 			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 8000);
 			}	
 		if (aleatorio_uno == 1) {
-			texto_dos.innerHTML = '<a class="texto">Tiempo T+1. Amenaza Zona Blanca</a>';
+			texto_dos.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Tiempo T+1. Amenaza Zona Blanca</a>';
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_1.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_white.play(); }, 3000);
@@ -146,7 +146,7 @@ function cronometro () {
 			setTimeout(function(){ sonido_threat_zone_white.play(); }, 8000);
 			}
 		if (aleatorio_uno == 2) {
-			texto_dos.innerHTML = '<a class="texto">Tiempo T+1. Amenaza Zona Roja</a>';
+			texto_dos.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Tiempo T+1. Amenaza Zona Roja</a>';
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_1.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_red.play(); }, 3000);
@@ -160,7 +160,7 @@ function cronometro () {
 			var aleatorio_dos = Math.round(Math.random()*2);
 			if (aleatorio_dos == 0) {
 			// texto
-			texto_tres.innerHTML = '<a class="texto">Tiempo T+2. Amenaza Zona Azul</a>';
+			texto_tres.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Tiempo T+2. Amenaza Zona Azul</a>';
 			// sonidos
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_2.play(); }, 2000);
@@ -170,7 +170,7 @@ function cronometro () {
 			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 8000);
 			}	
 		if (aleatorio_dos == 1) {
-			texto_tres.innerHTML = '<a class="texto">Tiempo T+2. Amenaza Zona Blanca</a>';
+			texto_tres.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Tiempo T+2. Amenaza Zona Blanca</a>';
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_2.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_white.play(); }, 3000);
@@ -179,7 +179,7 @@ function cronometro () {
 			setTimeout(function(){ sonido_threat_zone_white.play(); }, 8000);
 			}
 		if (aleatorio_dos == 2) {
-			texto_tres.innerHTML = '<a class="texto">Tiempo T+2. Amenaza Zona Roja</a>';
+			texto_tres.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Tiempo T+2. Amenaza Zona Roja</a>';
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_2.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_red.play(); }, 3000);
@@ -191,7 +191,7 @@ function cronometro () {
 		// transferencia datos 1m30s
 		if ((minutos == 1)&&(segundos == 30)&&(centesimas == 0)) {
 		sonido_data_transfer.play();
-		texto_cuatro.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
+		texto_cuatro.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Transferencia de datos en 5, 4, 3, 2, 1</a>';
 		}
 		
 		// comienzo tercera amenaza a 2m15s
@@ -199,7 +199,7 @@ function cronometro () {
 			var aleatorio_tres = Math.round(Math.random()*2);
 			if (aleatorio_tres == 0) {
 			// texto
-			texto_cinco.innerHTML = '<a class="texto">Tiempo T+3. Amenaza Zona Azul</a>';
+			texto_cinco.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Tiempo T+3. Amenaza Zona Azul</a>';
 			// sonidos
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 2000);
@@ -209,7 +209,7 @@ function cronometro () {
 			setTimeout(function(){ sonido_threat_zone_blue.play(); }, 8000);
 			}	
 		if (aleatorio_tres == 1) {
-			texto_cinco.innerHTML = '<a class="texto">Tiempo T+3. Amenaza Zona Blanca</a>';
+			texto_cinco.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Tiempo T+3. Amenaza Zona Blanca</a>';
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_white.play(); }, 3000);
@@ -218,7 +218,7 @@ function cronometro () {
 			setTimeout(function(){ sonido_threat_zone_white.play(); }, 8000);
 			}
 		if (aleatorio_tres == 2) {
-			texto_cinco.innerHTML = '<a class="texto">Tiempo T+3. Amenaza Zona Roja</a>';
+			texto_cinco.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Tiempo T+3. Amenaza Zona Roja</a>';
 			sonido_alert.play();
 			setTimeout(function(){ sonido_time_t_plus_3.play(); }, 2000);
 			setTimeout(function(){ sonido_threat_zone_red.play(); }, 3000);
@@ -230,48 +230,48 @@ function cronometro () {
 		// final 1º fase en 60s 3m10s
 		if ((minutos == 3)&&(segundos == 10)&&(centesimas == 0)) {
 		sonido_first_phase_ends_in_1_minute.play();
-		texto_seis.innerHTML = '<a class="texto">Fin de la primera fase en 1 minuto</a>';
+		texto_seis.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Fin de la primera fase en 1 minuto</a>';
 		}
 		// transferencia datos 3m20s
 		if ((minutos == 3)&&(segundos == 20)&&(centesimas == 0)) {
 		sonido_data_transfer.play();
-		texto_siete.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
+		texto_siete.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Transferencia de datos en 5, 4, 3, 2, 1</a>';
 		}
 		// final 1º fase en 20s 3m50s
 		if ((minutos == 3)&&(segundos == 50)&&(centesimas == 0)) {
 		sonido_first_phase_ends_in_20_seconds.play();
-		texto_ocho.innerHTML = '<a class="texto">Fin de la primera fase en 20 segundos</a>';
+		texto_ocho.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Fin de la primera fase en 20 segundos</a>';
 		}
 		// final 1º fase 4m05s
 		if ((minutos == 4)&&(segundos == 5)&&(centesimas == 0)) {
 		sonido_first_phase_ends.play();
-		texto_nueve.innerHTML = '<a class="texto">Fin de la primera fase en 5, 4, 3, 2, 1</a>';
+		texto_nueve.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Fin de la primera fase en 5, 4, 3, 2, 1</a>';
 		setTimeout(function(){ sonido_second_phase_begins.play(); }, 12000);
 		}
 		// recibienddo datos fase 4m40s
 		if ((minutos == 4)&&(segundos == 40)&&(centesimas == 0)) {
 		sonido_incoming_data.play();
-		texto_diez.innerHTML = '<a class="texto">Recibiendo datos</a>';
+		texto_diez.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Recibiendo datos</a>';
 		}
 		// transferencia datos 5m10s
 		if ((minutos == 5)&&(segundos == 10)&&(centesimas == 0)) {
 		sonido_data_transfer.play();
-		texto_once.innerHTML = '<a class="texto">Transferencia de datos en 5, 4, 3, 2, 1</a>';
+		texto_once.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' Transferencia de datos en 5, 4, 3, 2, 1</a>';
 		}
 		// La operación termina en 1 minuto
 		if ((minutos == 6)&&(segundos == 00)&&(centesimas == 0)) {
 		sonido_operation_ends_in_1_minute.play();
-		texto_doce.innerHTML = '<a class="texto">La operación termina en 1 minuto</a>';
+		texto_doce.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' La operación termina en 1 minuto</a>';
 		}
 		// La operación termina en 20s
 		if ((minutos == 6)&&(segundos == 40)&&(centesimas == 0)) {
 		sonido_operation_ends_in_20_seconds.play();
-		texto_trece.innerHTML = '<a class="texto">La operación termina en 20 segundos</a>';
+		texto_trece.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' La operación termina en 20 segundos</a>';
 		}
 		// La operación termina
 		if ((minutos == 6)&&(segundos == 55)&&(centesimas == 0)) {
 		sonido_operation_ends.play();
-		texto_catorce.innerHTML = '<a class="texto">La operación finaliza en 5, 4, 3, 2, 1.</a>';
+		texto_catorce.innerHTML = '<a class="texto">  '+ minutos+':'+segundos+' La operación finaliza en 5, 4, 3, 2, 1.</a>';
 		}
 		// La operación termina
 		if ((minutos == 7)&&(segundos == 08)&&(centesimas == 0)) {
