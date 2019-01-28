@@ -229,7 +229,7 @@ function cronometro () {
 		sonido_incoming_data.play();
 		texto_diez.innerHTML = '<a class="texto">Recibiendo datos</a>';
 		}
-		// recibienddo datos fase 4m40s
+		// recibienddo datos fase 5m30s
 		if ((minutos == 5)&&(segundos == 30)&&(centesimas == 0)) {
 		sonido_incoming_data.play();
 		texto_diez.innerHTML = '<a class="texto">Recibiendo datos</a>';

@@ -8,6 +8,21 @@ var entrenamiento = document.getElementById("entrenamiento");
 			entrenamiento.href = "./index_2.html";
 		}
 	}
+	
+var aleatorio_simulacro = Math.round(Math.random()*2);
+var simulacro = document.getElementById("simulacro");
+	if (simulacro) {
+		if (aleatorio_simulacro == 0) {
+			simulacro.href = "./index_3.html";
+		}
+		if (aleatorio_simulacro == 1) {
+			simulacro.href = "./index_4.html";
+		}
+		else {
+			simulacro.href = "./index_5.html";
+		}
+	}
+	
 var centesimas = 0;
 var segundos = 0;
 var minutos = 0;

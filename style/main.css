@@ -19,13 +19,22 @@
   z-index: -2;
 }
 
-#game-menu {
+#game_menu_uno {
     position: fixed;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     padding-bottom: 2rem;
+}
+
+#game_menu_dos {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding-top: 6rem;
 }
 
 .boton_uno {
@@ -38,7 +47,23 @@
     color: #FFF;
 }
 
-.texto_boton {
+.boton_dos {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.texto_boton_uno {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0.05rem 0.05rem black;
+}
+
+.texto_boton_dos {
     color: white;
     text-decoration: none;
     text-shadow: 0.05rem 0.05rem black;
@@ -47,6 +72,13 @@
 .imagen_boton {
 	position: absolute;
 	top: -40%;
+    left: -25%;
+    z-index: -10;
+}
+
+.imagen_boton_dos {
+	position: absolute;
+	top: 70%;
     left: -25%;
     z-index: -10;
 }
