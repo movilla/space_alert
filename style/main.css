@@ -53,8 +53,8 @@
 	background-color:grey;
 	border: 0.05rem solid;
     padding: 0.25rem;
-    box-shadow: 0.5rem 0.25rem;
-    border-radius: 0.25rem;
+    box-shadow: 0.5rem 0.25rem 0.50rem;
+    border-radius: 0.10rem 0.50rem 0.10rem 0.50rem;
     width: 15rem;
 }
 
@@ -63,7 +63,7 @@
 	background-color:grey;
 	border: 0.05rem solid;
     padding: 0.25rem;
-    box-shadow: 0.5rem 0.25rem;
+    border-radius: 0.10rem 0.50rem 0.10rem 0.50rem;
     border-radius: 0.25rem;
     width: 15rem;
 }
