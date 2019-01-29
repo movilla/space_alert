@@ -5,7 +5,7 @@
         id        = "https://github.com/movilla/cyclades"
         version   = "0.1.0">
 
-    <name>Space Aler Misiones</name>
+    <name>Space Alert Misiones</name>
 
     <description>
         Aplicación que permite jugar misiones aleatorias.
